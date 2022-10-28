@@ -20,6 +20,10 @@ ul {
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -399,15 +403,24 @@ li.pointer {
   background-image: url(../img/astronaut\ 1.png);
 }
 
+/*.icon-button {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}*/
+
 .icon-link {
-  /*height: 20px;
-  width: 20px;*/
-  padding: 0;
   margin: 0;
   justify-content: center;
   align-items: center;
 }
 
+.icon-link:hover, 
 .icon-team:hover {
   fill: #fff;
 }
@@ -434,7 +447,6 @@ li.pointer {
 
 .icon-container:hover {
   background-color: var(--accent-color);
-  color: #fff;
 }
 
 .icon-team {
@@ -444,6 +456,7 @@ li.pointer {
   height: 20px;
   width: 20px;
   fill: #afb1b8;
+  /*background-color: #fff;*/
 }
 
 .main-gallary-list {
@@ -474,8 +487,16 @@ li.pointer {
   gap: 30px;
 }
 
+.post {
+  2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
 .main-gallery-border {
   display: inline-block;
+  
 }
 
 /*team*/
@@ -650,7 +671,7 @@ li.pointer {
 }
 
 .container-icon {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .icon-title {
