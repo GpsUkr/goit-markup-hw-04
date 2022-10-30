@@ -20,9 +20,6 @@ ul {
   padding: 0;
 }
 
-/* {
-  box-sizing: border-box;
-}*/
 
 img {
   display: block;
@@ -121,7 +118,6 @@ li.pointer {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   display: flex;
-  /*align-items: center;*/
   display: inline-block;
   padding: 32px 0;
 }
@@ -189,7 +185,6 @@ li.pointer {
   display: flex;
   height: 12px;
   width: 16px;
-  /*gap: 10px;*/
   margin-right: 10px;
   align-items: center;
   fill: currentColor;
@@ -376,63 +371,41 @@ li.pointer {
   flex-basis: 270px;
 }
 
-.main-item::before {
-  display: block;
-  content: "" ;
+.icon-skill {
+  display: flex;
   height: 120px;
-  margin-bottom: 30px;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 270px;
+  align-items: center;
+  justify-content: center;
   background-color: #F5F4FA;
 }
 
-.icon-antenna::before {
-  background-image: url(../img/antenna\ 1.png);
-}
-
-.icon-clock::before {
-  background-image: url(../img/clock\ 1.png);
-}
-
-.icon-diagram::before {
-  background-image: url(../img/diagram\ 1.png);
-}
-
-.icon-astronaut::before {
-  background-image: url(../img/astronaut\ 1.png);
-}
-
-/*.icon-button {
-  display: flex;
-  height: 44px;
-  width: 44px;
-  justify-content: center;
+.icon-list {
+ 
   align-items: center;
-  padding: 10px;
-  border-radius: 50%;
-  background-color: #fff;
-}*/
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  fill: #afb1b8;
+  
+}
 
 .icon-link {
-  margin: 0;
+  display: flex;
+  width: 44px;
+  height: 44px;
   justify-content: center;
   align-items: center;
 }
 
-.icon-link:hover, 
-.icon-team:hover {
+.icon-link:hover 
+.icon-team {
   fill: #fff;
 }
 
 .icon-container {
- display: inline-flex;
-  height: 44px;
-  width: 44px;
-  justify-content: center;
-  padding: 10px;
+ display: flex;
   border-radius: 50%;
-  
 }
 
 .icon {
@@ -445,18 +418,17 @@ li.pointer {
   gap: 10px;
 }
 
-.icon-container:hover {
+.icon-container:hover  {
   background-color: var(--accent-color);
 }
 
 .icon-team {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 20px;
   width: 20px;
   fill: #afb1b8;
-  /*background-color: #fff;*/
 }
 
 .main-gallary-list {
@@ -487,15 +459,19 @@ li.pointer {
   gap: 30px;
 }
 
-/* .post {
-  2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12);
-} */
-
 .main-gallery-border {
   display: inline-block;
+  
+}
+
+.main-gallery-link {
+  display: inline-block;
+  
+}
+
+.main-gallery-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 
 /*team*/
@@ -560,6 +536,8 @@ li.pointer {
 
 .work-team-style {
   background-color: var(--style-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /*clients*/
@@ -581,26 +559,39 @@ li.pointer {
 
 .client-list {
   display: flex;
+  margin: 0;
+  padding: 0;
   gap: 30px;
-  fill: #afb1b8;
   cursor: pointer;
 }
 
-.client-icon {
-  fill:  #afb1b8;
+.client-conteier {
+  display: inline-flex;
+  width: 170px;
+  height: 92px;
 }
 
-.client-item {
-  display: block;
+.client-icon {
+  display: flex;
   width: 170px;
   height: 92px;
   border-color: #AFB1B8;
   border-width: 1px;
   border-style: Solid;
   border-radius: 4px;
+  fill: #AFB1B8;
+  align-items: center;
+  justify-content: center;
 }
 
-.client-item:hover {
+.client-item {
+ display: flex;
+  width: 106px;
+  height: 60px;
+}
+
+.client-item:hover, 
+.client-icon:hover {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -618,6 +609,7 @@ li.pointer {
 
 .container-footer {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-link {
@@ -673,10 +665,6 @@ li.pointer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.container-icon {
-  margin-top: 10px;
-}
-
 .icon-title {
   Font-size: 14px;
   line-height: 16px;
@@ -684,6 +672,7 @@ li.pointer {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #fff;
+  vertical-align: text-bottom;
 }
 
 .footer-icon-list {
