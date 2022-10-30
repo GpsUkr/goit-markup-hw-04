@@ -375,6 +375,7 @@ li.pointer {
   display: flex;
   height: 120px;
   width: 270px;
+  margin-bottom: 30px;
   align-items: center;
   justify-content: center;
   background-color: #F5F4FA;
