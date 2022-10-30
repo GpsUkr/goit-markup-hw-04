@@ -50,6 +50,10 @@ body {
   list-style: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .link,
 .footer-logo,
 .header-logo {
@@ -62,7 +66,7 @@ body {
 }
 
 li.pointer {
-  cursor: pointer
+  cursor: pointer;
 }
 
 .container {
