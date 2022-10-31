@@ -82,6 +82,10 @@ li.pointer {
   cursor: pointer;
 }
 
+.btn {
+  cursor: pointer;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -706,13 +710,12 @@ li.pointer {
 }
 
 .icon-title {
-  Font-size: 14px;
-  line-height: 16px;
-  Line-height: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #fff;
-  vertical-align: text-bottom;
 }
 
 .footer-icon-list {
