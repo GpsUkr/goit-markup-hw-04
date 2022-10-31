@@ -18,6 +18,7 @@ p,
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 
@@ -52,7 +53,19 @@ body {
 
 ul {
   list-style: none;
+  text-decoration: none;
 }
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
 
 .link,
 .footer-logo,
@@ -233,6 +246,7 @@ li.pointer {
   padding: 10px 32px;
   border-radius: 4px;
   margin-top: 30px;
+  border: none;
 }
 
 .main-btn {
@@ -344,7 +358,7 @@ li.pointer {
 
 .main-text {
   margin-top: 4px;
-  margin-left: 24px; 
+  margin-left: 0px; 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -401,6 +415,7 @@ li.pointer {
   height: 44px;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
 }
 
 .icon-link:hover 
@@ -408,9 +423,13 @@ li.pointer {
   fill: #fff;
 }
 
+.icon-link:focus 
+.icon-team {
+  fill: #fff;
+}
+
 .icon-container {
  display: flex;
-  border-radius: 50%;
 }
 
 .icon {
@@ -423,9 +442,19 @@ li.pointer {
   gap: 10px;
 }
 
-.icon-container:hover  {
+.icon-link:hover, 
+.icon-link:focus {
+  background-color: var(--accent-color)
+}
+
+
+/*.icon-container:hover  {
   background-color: var(--accent-color);
 }
+
+.icon-container:focus {
+  background-color: var(--primary-text-color);
+}*/
 
 .icon-team {
   display: flex;
@@ -474,6 +503,7 @@ li.pointer {
   
 }
 
+.main-gallery-link:hover, 
 .main-gallery-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
@@ -516,7 +546,7 @@ li.pointer {
 }
 
  .work-team-item {
-  padding: 30px 10px;
+  padding: 30px 0px;
  }
 
 .work-team-list {
@@ -597,6 +627,11 @@ li.pointer {
 
 .client-item:hover, 
 .client-icon:hover {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.client-item:focus, 
+.client-icon:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -704,6 +739,7 @@ li.pointer {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.icon-container-footer:hover {
+.icon-container-footer:hover, 
+.icon-container-footer:focus {
   background-color: var(--accent-color);
 }
